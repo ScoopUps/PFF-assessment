@@ -16,7 +16,7 @@ class App extends Component {
       value: 698,
       playerPic: Brady
     };
-    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -57,7 +57,9 @@ class App extends Component {
                 player: playerResult 
               });
         },
-      )
+      ).catch(function(err) {
+        console.log(err);
+    });
   }
 
   componentDidMount() {
@@ -82,7 +84,9 @@ class App extends Component {
                 player: playerResult 
               });
         },
-      )
+      ).catch(function(err) {
+        console.log(err);
+    });
   }
 
   render() {
