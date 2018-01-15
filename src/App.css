@@ -46,6 +46,10 @@ th{
   padding: 0 15px;
 }
 
+.table-body-row:hover {
+  background: rgba(34,122,78, 0.2);
+}
+
 #player-card{
   display: flex;
   justify-content: center;

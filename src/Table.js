@@ -50,7 +50,7 @@ render(){
             </tr>
           </thead>
    			{this.props.stats.map((stat, i) => (
-              <tr key={i}>
+              <tr key={i} className="table-body-row">
 	              <td>{stat.week}</td>
 	              <td>{stat.completions}</td> 
 		          <td>{stat.attempts}</td> 
