@@ -27,7 +27,7 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch("https://crossorigin.me/http://web.profootballfocus.com.s3-website-us-east-1.amazonaws.com/quarterbacks.json")
+    fetch("https://cors-anywhere.herokuapp.com/http://web.profootballfocus.com.s3-website-us-east-1.amazonaws.com/quarterbacks.json")
       .then(res => res.json())
       .then(
         (result) => {
@@ -63,7 +63,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://crossorigin.me/http://web.profootballfocus.com.s3-website-us-east-1.amazonaws.com/quarterbacks.json")
+    fetch("https://cors-anywhere.herokuapp.com/http://web.profootballfocus.com.s3-website-us-east-1.amazonaws.com/quarterbacks.json")
       .then(res => res.json())
       .then(
         (result) => {
